@@ -1,0 +1,52 @@
+name: 功能建議
+description: 提出符合專案定位的新功能或改善建議
+title: "[功能] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        請先確認此提案是否符合本專案「價格提醒工具」的定位。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 想解決的問題
+      description: 這個功能想解決什麼問題
+      placeholder: 例如：使用者很難快速設定追蹤條件
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建議內容
+      description: 請描述你希望新增或改善的內容
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_case
+    attributes:
+      label: 使用情境
+      description: 誰會使用這個功能？在什麼情境下會需要？
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope_fit
+    attributes:
+      label: 是否符合目前專案定位
+      description: 請先自行評估
+      options:
+        - 是，屬於價格追蹤／條件判斷／通知範圍
+        - 不確定，需要討論
+        - 否，可能偏向查詢／瀏覽／比較型功能
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 可能影響
+      description: 此功能是否可能擴大專案範圍、增加維護成本或和既有定位衝突？

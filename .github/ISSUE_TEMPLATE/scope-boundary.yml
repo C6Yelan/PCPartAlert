@@ -1,0 +1,55 @@
+name: 規劃／邊界討論
+description: 討論需求邊界、非目標、產品定位與範圍取捨
+title: "[規劃] "
+labels: ["discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        此表單適合用於討論：
+        - 是否應納入某項需求
+        - 是否會造成 scope creep
+        - 是否偏離提醒工具定位
+
+  - type: textarea
+    id: topic
+    attributes:
+      label: 討論主題
+      description: 請描述你想討論的需求、方向或邊界問題
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 討論原因
+      description: 為什麼這件事現在值得討論？
+    validations:
+      required: true
+
+  - type: textarea
+    id: options
+    attributes:
+      label: 可行選項
+      description: 若你已有想法，請列出可能方案與取捨
+      placeholder: |
+        方案 A：
+        方案 B：
+        方案 C：
+
+  - type: dropdown
+    id: relation
+    attributes:
+      label: 與目前專案定位的關係
+      options:
+        - 高度相關
+        - 部分相關
+        - 可能偏離目前定位
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補充說明
+      description: 其他需要先對齊的背景資訊

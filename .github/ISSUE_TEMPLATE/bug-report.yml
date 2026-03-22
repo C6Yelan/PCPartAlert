@@ -1,0 +1,52 @@
+name: 問題回報
+description: 回報明確的錯誤、異常或不符合預期的行為
+title: "[問題] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝你的回報，請盡量提供可重現的資訊。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 問題描述
+      description: 請清楚描述發生了什麼問題
+      placeholder: 例如：價格比對結果異常、通知重複發送、指令回應失敗
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重現方式
+      description: 請列出可重現問題的步驟
+      placeholder: |
+        1. 執行某個指令
+        2. 設定某個條件
+        3. 觀察到某個異常結果
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 預期結果
+      description: 你原本預期應該發生什麼事
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 實際結果
+      description: 實際發生了什麼事
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 補充資訊
+      description: 可補充截圖、訊息內容、環境資訊或其他說明
