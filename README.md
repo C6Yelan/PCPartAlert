@@ -37,5 +37,8 @@
 ## 目前狀態
 需求整理中，尚未開始開發。
 
+## 文件
+- [資料來源與免責聲明](docs/data-source-and-disclaimer.md)
+
 ## 授權
 本專案採用 Apache License 2.0 授權。
