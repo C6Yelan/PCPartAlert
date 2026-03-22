@@ -39,6 +39,7 @@
 
 ## 文件
 - [資料來源與免責聲明](docs/data-source-and-disclaimer.md)
+- [隱私政策](PRIVACY.md)
 
 ## 授權
 本專案採用 Apache License 2.0 授權。
